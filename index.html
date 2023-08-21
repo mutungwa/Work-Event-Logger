@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Municipality Logger</title>
+</head>
+<body>
+    <div class="event-form">
+        <h2>Municipality Logger</h2>
+        <form id="eventForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="idNumber">ID Number:</label>
+            <input type="text" id="idNumber" required>
+            <label for="department">Department:</label>
+            <select id="department">
+                <option value="Gender">Gender</option>
+                <option value="Devolution">Devolution</option>
+                <option value="hr">Human Resources</option>
+                <option value="Sports">Sports</option>
+                <option value="Procurement">Procurement</option>
+                <option value="ICT">ICT</option>
+            </select>
+            <div class="button-container">
+                <button type="button" id="signInBtn">Sign In</button>
+                <button type="button" id="signOutBtn">Sign Out</button>
+            </div>
+        </form>
+        <div id="eventLog">
+            <h2>Event Log</h2>
+            <ul id="logList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
